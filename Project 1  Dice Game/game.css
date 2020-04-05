@@ -1,0 +1,112 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+.gameboard{
+    display: -webkit-box;
+    -webkit-box-align: center;
+    height: 630px;
+    width: 1335px;
+    background-color: #9C7148;
+    background-image: url("wed.jpg");
+    margin: 15px;
+    
+}
+.usedboard{
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    height:430px;
+    width: 735px;
+    background-color: white;
+    border: .1px solid black;
+    margin-left: 300px;
+    margin-right: 300px;
+    
+}
+#player-0{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    height:430px;
+    width: 367.5px;
+    background-color: white;
+    
+}
+#player-1{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    height:430px;
+    width: 367.5px;
+    background-color: rgb(240, 233, 233);
+    
+}
+.playername{
+    display: -webkit-box;
+    -webkit-box-pack:center;
+    padding: 35px;
+    font:  20px Tahoma;
+    color: black
+}
+#score-0{
+    display: -webkit-box;
+    -webkit-box-pack:center;
+    font: 90px Tahoma;
+    color: #EE1F41;
+
+}
+#score-1{
+    display: -webkit-box;
+    -webkit-box-pack:center;
+    font: 90px Tahoma;
+    color: #EE1F41;
+
+}
+#roundScore-0{
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    margin-top: 70px;
+    font-size: 30px;
+    border: 2px solid red;
+    width:80px;
+    margin-left: 150px;
+    background-color:#EE1F41;
+ 
+}
+#roundScore-1{
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    margin-top: 70px;
+    font-size: 30px;
+    border: 2px solid red;
+    width:80px;
+    margin-left: 150px;
+    background-color:#EE1F41;
+ 
+}
+
+#newgame{
+    margin-left: -410px;
+    margin-top: 10px;
+    color:white;
+    padding:5px;
+    background-color: red;
+}
+#roll{
+  margin-left: -400px;
+    margin-top: 90px;
+    padding:5px;
+    font: 10px;
+}
+#hold{
+    margin-left: -385px;
+    margin-top: 25px;
+    padding:2px;
+    font: 10px;
+}
+#dice{
+    display: inline-block;
+    margin-left: -390px;
+    margin-top:90px;
+    
+
+}
