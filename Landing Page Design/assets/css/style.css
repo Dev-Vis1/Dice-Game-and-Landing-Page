@@ -1,0 +1,859 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body{
+	color: #393939;
+	background: #ffffff;
+	font-size: 17px;
+	font-family: 'Poppins', sans-serif;
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  display: none;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.main-bg{
+	background: #fbb03b;
+}
+.text-main{
+    color: #fbb03b;
+}
+.text-black{
+    color: #000000;
+}
+.text-white{
+    color: #ffffff;
+}
+a#return-to-top {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a , a:hover{
+	color: #fbb03b;
+    text-decoration: none;
+}
+input , select{
+	outline: none!important;
+}
+button{
+	outline: none!important;
+}
+
+h1{
+    font-weight: 800;
+	font-size: 50px;
+	font-family: 'Mukta', sans-serif;
+}
+h2{
+    font-weight: 800;
+	font-size: 45px;
+	font-family: 'Mukta', sans-serif;
+}
+h3{
+    font-weight: 800;
+	font-size: 36px;
+	font-family: 'Mukta', sans-serif;
+}
+h4{
+    font-weight: 800;
+	font-size: 30px;
+	font-family: 'Mukta', sans-serif;
+}
+h5{
+    font-weight: 800;
+	font-size: 24px;
+	font-family: 'Mukta', sans-serif;
+}
+h6{
+    font-weight: 800;
+	font-size: 18px;
+	font-family: 'Mukta', sans-serif;
+}
+p{
+	line-height: 27px;
+    font-size: 17px;
+}
+ul li{
+	list-style: none;
+}
+ul , p , h1, h2, h3, h4, h5, h6{
+	margin-bottom: 0px;
+}
+img{
+	max-width: 100%;
+}
+.btn-main {
+    padding: 20px 50px;
+    border-radius: 50px;
+    border: 2px solid #fbb03b;
+    color: #1b1b1b;
+    background: #fbb03b;
+    font-size: 19px;
+    transition: .3s ease;
+    font-weight: 800;
+}
+.btn-main:hover {
+    border: 2px solid #fbb03b;
+    background: #ffffff;
+    color: inherit;
+}
+.btn-call {
+    padding: 20px 30px 20px 70px;
+    border-radius: 50px;
+    border: 2px solid #fbb03b;
+    color: #ffffff;
+    transition: .3s ease;
+    background: transparent;
+    font-size: 19px;
+    font-weight: 800;
+    position: relative;
+}
+.btn-call:hover {
+    background: #ffffff;
+}
+.btn-call .call-icon {
+    position: absolute;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    background: #fbb03b;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1.5px solid #fbb03b;
+    top: 5px;
+}
+.btn-call .call-icon img{
+    max-width: 50%;
+}
+.container-fluid {
+    width: 100%;
+    padding-right: 115px;
+    padding-left: 115px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.wrapper {
+    position: relative;
+    width: 100%;
+}
+.wrapper .header {
+    padding: 10px 0;
+}
+.wrapper .header .navbar{
+    padding: 0px;
+}
+.wrapper .banner {
+    position: relative;
+    width: 100%;
+    min-height: 680px;
+    background: url("../images/banner1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.wrapper .banner:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(27, 27, 27, 0.92);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.wrapper .banner .banner-in .row {
+    align-items: center;
+}
+.wrapper .banner .banner-in {
+    position: relative;
+    z-index: 10;
+}
+.wrapper .banner .banner-in .banner-left h1 {
+    color: #ffffff;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.wrapper .banner .banner-in .banner-left p{
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.wrapper .banner .banner-in .banner-left .banner-btn-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.wrapper .banner .banner-in .banner-left .banner-btn-group a:nth-child(1){
+    margin-right: 40px;
+}
+.wrapper .banner .banner-in .banner-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper .banner .banner-in  .banner-right .video-play-btn {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    font-size: 30px;
+    border: none;
+    background: #ffffff;
+}
+.pulse {
+    margin: 0;
+    display: flex;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 0 0 #421ac9;
+    animation: pulse 4s infinite;
+    padding: 20px;
+    object-fit: contain;
+    border: 2px solid #39a64c;
+    align-items: center;
+    justify-content: center;
+}
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-box-shadow: 0 0 0 0 rgba(251, 176, 59, 0.85);
+	}
+	70% {
+		-webkit-box-shadow: 0 0 0 10px rgba(251, 176, 59, 0.85);
+	}
+	100% {
+		-webkit-box-shadow: 0 0 0 0 rgba(251, 176, 59, 0.85);
+	}
+}
+@keyframes pulse {
+0% {
+	-moz-box-shadow: 0 0 0 0 rgba(251, 176, 59, 0.85);
+		box-shadow: 0 0 0 0 rgba(251, 176, 59, 0.85);
+	}
+	70% {
+		-moz-box-shadow: 0 0 0 10px rgba(251, 176, 59, 0.85);
+		box-shadow: 0 0 0 10px rgba(251, 176, 59, 0.85);
+	}
+	100% {
+		-moz-box-shadow: 0 0 0 0 rgba(251, 176, 59, 0.85);
+		box-shadow: 0 0 0 0 rgba(251, 176, 59, 0.85);
+	}
+}
+.growsale-block {
+    position: relative;
+    padding: 60px 0;
+    width: 100%;
+}
+.arrow-down {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.title {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.title h2{
+    margin-bottom: 30px;
+    font-weight: 800;
+    color: #000000;
+}
+.title p{
+    max-width: 790px;
+    margin: auto;
+}
+.growsale-block .grow-tiles {
+    position: relative;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.growsale-block .grow-tiles img{
+    margin-right: 60px;
+}
+.growsale-block .grow-tiles .tiles-content h3 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #000000;
+}
+.letgo {
+    position: relative;
+    width: 100%;
+    background: #f3f3f3;
+}
+.letgo  .container-fluid {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+.letgo .letgo-img img{
+ width: 100%;
+}
+.letgo  .letgo-content {
+    padding: 100px;
+    height: 100%;
+    position: relative;
+}
+.letgo  .letgo-content img{
+    margin-right: 40px;
+}
+.letgo .letgo-content h5 {
+    margin-bottom: 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.letgo .letgo-content h2{
+    font-weight: 800;
+    margin-bottom: 35px;
+    color: #000000;
+}
+.letgo .letgo-content p {
+    margin-bottom: 35px;
+}
+
+.chooseus {
+    position: relative;
+    padding: 80px 0;
+    background-image: url("../images/choosebg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.chooseus .choose-tiles {
+    margin-bottom: 40px;
+}
+.chooseus .choose-tiles .choose-tilein {
+    padding: 80px 40px;
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 0px -20px 100px #00000017;
+    height: 505px;
+}
+.chooseus .choose-tiles .choose-tilein img {
+    margin-bottom: 20px;
+}
+.chooseus .choose-tiles .choose-tilein h3{
+    font-weight: 800;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.submition-form{
+    display: flex;
+    align-items: center;
+}
+.form-control:focus {
+    color: #000000;
+    background-color: #fff;
+    border-color: #fbb03b;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(251, 176, 59, 0.38);
+}
+.submition-form .form-group{
+    max-width: 25%;
+    flex: 0 0 25%;
+    padding: 0 15px;
+    margin: 0;
+}
+.submition-form .form-group .form-control {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 30px 30px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    color: #000000;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    width: 100%;
+}
+.submition-form .form-group .form-control::placeholder{
+    font-size: 17px;
+    font-weight: 800;
+    line-height: normal;
+    color: #000000;
+}
+.submition-form .form-group button{
+    width: 100%;
+    padding: 30px;
+}
+.connectus {
+    position: relative;
+    width: 100%;
+}
+.connectus .connectus-tilesin {
+    position: relative;
+    height: 100%;
+    padding-top: 150px;
+    padding-right: 70px;
+}
+.connectus .connectus-tilesin .connect-title {
+    margin-bottom: 50px;
+}
+.connectus .connectus-tilesin .connect-title h4{
+    margin-bottom: 20px;
+}
+.connectus .connectus-tilesin .connectus-tilein h3{
+    margin-bottom: 10px;
+}
+.connectus .connectus-tilesin .connectus-tilein p{
+    color: #000000;
+}
+.footer {
+    position: relative;
+    width: 100%;
+}
+.footer .footerin {
+    background: #fbb03b;
+    padding: 100px 0;
+    text-align: center;
+}
+.footer .footerin  h3{
+    color: #000000;
+    margin-bottom: 15px;
+}
+.footer .footerin  .footerin-left .btn-call {
+    padding: 20px 30px 20px 70px;
+    border-radius: 50px;
+    border: 2px solid #fbb03b;
+    color: #ffffff;
+    background: black;
+    width: 50%;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.25);
+}
+.footer .footerin  .footerin-right .btn-call{
+    padding: 20px 30px 20px 70px;
+    border-radius: 50px;
+    border: 2px solid #fbb03b;
+    color: #ffffff;
+    background: black;
+    width: 80%;
+    text-align: left;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.25);
+}
+.footer .footerin .footerin-right .btn-call .call-icon {
+    position: absolute;
+    right: 5px;
+    left: inherit;
+}
+.copyright {
+    background: #000000;
+    padding: 20px 0;
+    text-align: center;
+}
+.copyright p{
+    color: #ffffff;
+}
+
+
+
+@media (max-width: 1440px){
+    .container-fluid {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .wrapper .banner .banner-in .banner-right .video-play-btn {
+        width: 90px;
+        height: 90px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    p {
+        line-height: 26px;
+        font-size: 16px;
+    }
+    .wrapper .banner {
+        position: relative;
+        width: 100%;
+        min-height: 530px;
+    }
+    .growsale-block .grow-tiles {
+        position: relative;
+        padding-right: 0px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+    .growsale-block .grow-tiles img {
+        margin-right: 40px;
+    }
+    .letgo-img {
+        height: 100%;
+        width: 100%;
+    }
+    .letgo .letgo-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .letgo .letgo-content {
+        padding: 50px;
+        height: 100%;
+        position: relative;
+    }
+    .letgo .letgo-content h5 {
+        margin-bottom: 10px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        font-size: 20px;
+    }
+    .letgo .letgo-content img {
+        margin-right: 20px;
+        width: 60px;
+    }
+    .letgo .letgo-content h2 {
+        font-weight: 800;
+        margin-bottom: 15px;
+        color: #000000;
+        font-size: 35px;
+    }
+    .letgo .letgo-content p {
+        margin-bottom: 15px;
+    }
+    .chooseus .choose-tiles .choose-tilein {
+        padding: 40px 20px;
+        text-align: center;
+        background: #ffffff;
+        box-shadow: 0px -20px 100px #00000017;
+        height: 490px;
+    }
+    .chooseus{
+        padding: 60px 0;
+    }
+    .arrow-down {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .submition-form .form-group .form-control{
+        padding: 20px 20px;
+    }
+    .submition-form .form-group button {
+        width: 100%;
+        padding: 20px;
+    }
+    .connectus .connectus-tilesin {
+        position: relative;
+        height: 100%;
+        padding-top: 60px;
+        padding-right: 0;
+    }
+    .connectus .connectus-tilesin .connect-title {
+        margin-bottom: 20px;
+    }
+    .connectus .connectus-tilesin .connect-title h4 {
+        margin-bottom: 10px;
+        font-size: 26px;
+    }   
+    .connectus .connectus-tilesin .connect-title {
+        margin-bottom: 10px;
+    }    
+    .boy-img-block {
+        text-align: center;
+    }
+    .footer .footerin .footerin-left .btn-call{
+        width: 80%;
+    }
+    .footer .footerin .footerin-right .btn-call{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1199px){
+    .letgo .letgo-img img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .letgo-img {
+        height: auto;
+        width: auto;
+    }
+    .chooseus .choose-tiles .choose-tilein {
+        padding: 40px 20px;
+        text-align: center;
+        background: #ffffff;
+        box-shadow: 0px -20px 100px #00000017;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .footer .footerin .footerin-left .btn-call{
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px){
+    .container-fluid {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .wrapper .banner{
+        min-height: auto;
+        padding: 60px 0;
+    }
+    .banner-left{
+        margin-bottom: 40px;
+    }
+    .btn-call {
+        padding: 20px 20px 20px 70px;
+        border-radius: 50px;
+        font-size: 14px;
+    }
+    .btn-call .call-icon {
+        width: 45px;
+        height: 45px;
+    }
+    .arrow-down a img {
+        width: 30px;
+    }
+    .chooseus .arrow-down a img {
+        width: 5px;
+        height: 50px;
+    }
+    .arrow-down {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .title {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .title h2 {
+        margin-bottom: 10px;
+        font-weight: 800;
+        color: #000000;
+    }
+    h2{
+        font-size: 30px;
+    }
+    .growsale-block .grow-tiles{
+        margin-bottom: 30px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    .growsale-block .grow-tiles .tiles-content h3 {
+        font-weight: 700;
+        margin-bottom: 5px;
+        color: #000000;
+    }
+    p {
+        line-height: 24px;
+        font-size: 15px;
+    }
+    .growsale-block .grow-tiles img {
+        margin-right: 20px;
+    }
+    .chooseus {
+        padding: 30px 0;
+    }
+    .submition-form {
+        display: block;
+    }
+    .submition-form .form-group {
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding: 0 0px;
+        margin: 0 0px 15px 0;
+        text-align: center;
+    }
+    .submition-form .form-group button {
+        width: auto;
+        padding: 20px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px){
+    .container-fluid {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .btn-main {
+        padding: 15px 15px;
+        border-radius: 50px;
+        border: 2px solid #fbb03b;
+        color: #1b1b1b;
+        background: #fbb03b;
+        font-size: 14px;
+        transition: .3s ease;
+        font-weight: 800;
+    }
+    .navbar-brand img {
+        max-width: 90%;
+    }   
+    .wrapper .banner .banner-in .banner-left .banner-btn-group{
+        display: block;
+    }
+    .wrapper .banner .banner-in .banner-left .banner-btn-group .btn-call{
+        display: block;
+        margin: 0px 0 15px 0;
+    }
+    .letgo .letgo-content {
+        padding: 30px 0px;
+        height: 100%;
+        position: relative;
+    }
+    .letgo .letgo-content h2 {
+        font-weight: 800;
+        margin-bottom: 10px;
+        color: #000000;
+        font-size: 22px;
+    }
+    .letgo .letgo-content img{
+        display: none;
+    }
+    .letgo .letgo-content p {
+        margin-bottom: 10px;
+    }
+    .chooseus .choose-tiles .choose-tilein h3 {
+        font-weight: 800;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+    .chooseus .choose-tiles .choose-tilein img {
+        margin-bottom: 10px;
+        width: 25%;
+    }
+    .submition-form .form-group .form-control {
+        padding: 15px 15px;
+        font-size: 14px;
+    }
+    .pulse {
+        margin: 0;
+        display: flex;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: #ffffff;
+        cursor: pointer;
+        box-shadow: 0 0 0 #421ac9;
+        animation: pulse 4s infinite;
+        padding: 10px;
+        object-fit: contain;
+        border: 2px solid #39a64c;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer .footerin {
+        background: #fbb03b;
+        padding: 30px 0;
+        text-align: center;
+    }
+    .footerin-left {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+@media (max-width: 474px){
+    .navbar-brand img {
+        max-width: 90%;
+    }   
+    .navbar-brand {
+        width: 50%;
+    }
+    h1{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .wrapper .banner .banner-in .banner-right .video-play-btn {
+        width: 50px;
+        height: 50px;
+        padding: 0px;
+    }
+    .growsale-block {
+        position: relative;
+        padding: 20px 0;
+        width: 100%;
+    }
+    .arrow-down a img {
+        width: 20px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    .growsale-block .grow-tiles {
+        margin-bottom: 20px;
+        display: block;
+        text-align: center;
+    }
+    .growsale-block .grow-tiles img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .chooseus .arrow-down a img {
+        width: 3px;
+        height: 30px;
+    }
+    .arrow-down {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .connectus .connectus-tilesin {
+        position: relative;
+        height: 100%;
+        padding-top: 30px;
+        padding-right: 0;
+    }
+    .connectus .connectus-tilesin .connect-title {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .connectus-tilein {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
